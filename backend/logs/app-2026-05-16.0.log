@@ -1,0 +1,507 @@
+2026-05-16 12:42:09.041 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 96696 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 12:42:09.041 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 12:42:09.042 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:42:09.674 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-16 12:42:09.732 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 671 ms
+2026-05-16 12:42:10.322 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2026-05-16 12:42:10.359 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-16 12:42:10.410 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-16 12:42:10.425 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-16 12:42:10.464 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-05-16 12:42:10.469 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.668 seconds (process running for 1.822)
+2026-05-16 12:43:55.893 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-16 12:43:55.894 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2026-05-16 12:43:55.894 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2026-05-16 12:43:55.894 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2026-05-16 12:43:55.895 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5fee1e24
+2026-05-16 12:43:55.896 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@446ec9f
+2026-05-16 12:43:55.896 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-05-16 12:43:55.896 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-05-16 12:43:55.905 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 12:43:55.913 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 12:43:55.938 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:43:55.939 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 12:43:55.954 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:43:55.961 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 12:43:55.961 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 12:43:55.961 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:43:55.961 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 12:43:55.962 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:44:07.118 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 12:44:07.120 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 12:44:07.123 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:44:07.125 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 12:44:07.129 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:44:07.137 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 12:44:07.138 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 12:44:07.138 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:44:07.138 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 12:44:07.139 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:44:29.788 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 12:44:29.789 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 12:44:29.792 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:44:29.793 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 12:44:29.796 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:44:29.807 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 12:44:29.808 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 12:44:29.808 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:44:29.808 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 12:44:29.809 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:44:43.248 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 98488 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 12:44:43.249 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 12:44:43.249 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:44:43.677 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-16 12:44:43.721 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 455 ms
+2026-05-16 12:44:43.909 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2026-05-16 12:44:43.920 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-16 12:44:43.955 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-16 12:44:43.966 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-16 12:44:43.992 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-05-16 12:44:43.998 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-16 12:44:44.004 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-05-16 12:44:51.774 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 98494 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 12:44:51.775 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 12:44:51.776 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:44:52.255 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-16 12:44:52.308 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 500 ms
+2026-05-16 12:44:52.523 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2026-05-16 12:44:52.534 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-16 12:44:52.570 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-16 12:44:52.581 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-16 12:44:52.612 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-16 12:44:52.615 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.107 seconds (process running for 1.378)
+2026-05-16 12:45:17.728 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/chat", parameters={}
+2026-05-16 12:45:17.741 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#chat(ChatRequest)
+2026-05-16 12:45:18.154 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ChatRequest[message=Hello, history=[]]]
+2026-05-16 12:45:18.162 [http-nio-8080-exec-7] INFO  c.p.controller.ChatController - Received chat request: Hello
+2026-05-16 12:45:18.212 [http-nio-8080-exec-7] DEBUG com.portfolio.service.ChatService - Handling chat message: Hello
+2026-05-16 12:45:18.278 [http-nio-8080-exec-7] DEBUG o.s.w.r.f.client.ExchangeFunctions - [5df0937] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:45:19.191 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [5df0937] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=64, messages=[AnthropicMessage[role=sy (truncated)...]
+2026-05-16 12:45:20.570 [reactor-http-nio-2] DEBUG o.s.w.r.f.client.ExchangeFunctions - [5df0937] [edc6cecc-1] Response 200 OK
+2026-05-16 12:45:20.586 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [5df0937] [edc6cecc-1] Decoded [AnthropicResponse[choices=[OpenRouterChoice[message=AnthropicMessage[role=assistant, content=web]]]]]
+2026-05-16 12:45:20.586 [http-nio-8080-exec-7] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-05-16 12:45:20.587 [http-nio-8080-exec-7] DEBUG o.s.w.r.f.client.ExchangeFunctions - [ba32340] HTTP GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=Hello&num=4
+2026-05-16 12:45:20.759 [reactor-http-nio-3] DEBUG o.s.w.r.f.client.ExchangeFunctions - [ba32340] [e963c252-1] Response 403 FORBIDDEN
+2026-05-16 12:45:20.767 [reactor-http-nio-3] DEBUG org.springframework.web.HttpLogging - [ba32340] [e963c252-1] Read 1072 bytes
+2026-05-16 12:45:20.777 [http-nio-8080-exec-7] ERROR c.p.service.GoogleSearchService - Google search failed for query 'Hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=Hello&num=4
+2026-05-16 12:45:20.777 [http-nio-8080-exec-7] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-05-16 12:45:20.778 [http-nio-8080-exec-7] DEBUG o.s.w.r.f.client.ExchangeFunctions - [634a1337] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:45:20.780 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [634a1337] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=1500, messages=[AnthropicMessage[role= (truncated)...]
+2026-05-16 12:45:20.828 [reactor-http-nio-2] DEBUG o.s.w.r.f.client.ExchangeFunctions - [634a1337] [edc6cecc-2] Response 402 PAYMENT_REQUIRED
+2026-05-16 12:45:20.829 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [634a1337] [edc6cecc-2] Read 317 bytes
+2026-05-16 12:45:20.830 [http-nio-8080-exec-7] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:45:20.833 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:45:20.835 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ChatResponse[reply=I'm having trouble connecting right now. Please try again in a moment., type=mixe (truncated)...]
+2026-05-16 12:45:20.839 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:46:21.893 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 98757 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 12:46:21.894 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 12:46:21.894 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:46:22.305 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-16 12:46:22.341 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 426 ms
+2026-05-16 12:46:22.533 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2026-05-16 12:46:22.543 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-16 12:46:22.578 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-16 12:46:22.589 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-16 12:46:22.618 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-16 12:46:22.621 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 0.974 seconds (process running for 1.255)
+2026-05-16 12:46:37.284 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 12:46:37.290 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 12:46:37.295 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:46:37.308 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 12:46:37.311 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:46:37.320 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 12:46:37.320 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 12:46:37.321 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:46:37.321 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 12:46:37.324 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:46:43.235 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/chat", parameters={}
+2026-05-16 12:46:43.236 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#chat(ChatRequest)
+2026-05-16 12:46:43.241 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ChatRequest[message=hello, history=[]]]
+2026-05-16 12:46:43.243 [http-nio-8080-exec-10] INFO  c.p.controller.ChatController - Received chat request: hello
+2026-05-16 12:46:43.243 [http-nio-8080-exec-10] DEBUG com.portfolio.service.ChatService - Handling chat message: hello
+2026-05-16 12:46:43.248 [http-nio-8080-exec-10] DEBUG o.s.w.r.f.client.ExchangeFunctions - [19a10965] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:46:43.253 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [19a10965] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=64, messages=[AnthropicMessage[role=sy (truncated)...]
+2026-05-16 12:46:44.930 [reactor-http-nio-2] DEBUG o.s.w.r.f.client.ExchangeFunctions - [19a10965] [edc6cecc-3] Response 200 OK
+2026-05-16 12:46:44.937 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [19a10965] [edc6cecc-3] Decoded [AnthropicResponse[choices=[OpenRouterChoice[message=AnthropicMessage[role=assistant, content=web]]]]]
+2026-05-16 12:46:44.939 [http-nio-8080-exec-10] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-05-16 12:46:44.939 [http-nio-8080-exec-10] DEBUG o.s.w.r.f.client.ExchangeFunctions - [1766f421] HTTP GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 12:46:45.060 [reactor-http-nio-3] DEBUG o.s.w.r.f.client.ExchangeFunctions - [1766f421] [e963c252-2] Response 403 FORBIDDEN
+2026-05-16 12:46:45.061 [reactor-http-nio-3] DEBUG org.springframework.web.HttpLogging - [1766f421] [e963c252-2] Read 1072 bytes
+2026-05-16 12:46:45.064 [http-nio-8080-exec-10] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 12:46:45.065 [http-nio-8080-exec-10] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-05-16 12:46:45.066 [http-nio-8080-exec-10] DEBUG o.s.w.r.f.client.ExchangeFunctions - [13596215] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:46:45.066 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [13596215] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=1500, messages=[AnthropicMessage[role= (truncated)...]
+2026-05-16 12:46:45.546 [reactor-http-nio-2] DEBUG o.s.w.r.f.client.ExchangeFunctions - [13596215] [edc6cecc-4] Response 402 PAYMENT_REQUIRED
+2026-05-16 12:46:45.549 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [13596215] [edc6cecc-4] Read 317 bytes
+2026-05-16 12:46:45.550 [http-nio-8080-exec-10] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:46:45.551 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:46:45.552 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ChatResponse[reply=I'm having trouble connecting right now. Please try again in a moment., type=mixe (truncated)...]
+2026-05-16 12:46:45.553 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 12:47:41.154 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 99026 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 12:47:41.157 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 12:47:41.159 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 12:47:41.598 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-16 12:47:41.653 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 473 ms
+2026-05-16 12:47:41.837 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2026-05-16 12:47:41.849 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-16 12:47:41.888 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-16 12:47:41.900 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-16 12:47:41.933 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-16 12:47:41.936 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.057 seconds (process running for 1.37)
+2026-05-16 12:47:53.398 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/chat", parameters={}
+2026-05-16 12:47:53.407 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#chat(ChatRequest)
+2026-05-16 12:47:53.427 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ChatRequest[message=hello, history=[MessageHistory[role=user, content=hello], MessageHistory[role=as (truncated)...]
+2026-05-16 12:47:53.429 [http-nio-8080-exec-1] INFO  c.p.controller.ChatController - Received chat request: hello
+2026-05-16 12:47:53.430 [http-nio-8080-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: hello
+2026-05-16 12:47:53.434 [http-nio-8080-exec-1] DEBUG o.s.w.r.f.client.ExchangeFunctions - [10c01ac7] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:47:53.437 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [10c01ac7] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=64, messages=[AnthropicMessage[role=sy (truncated)...]
+2026-05-16 12:47:54.923 [reactor-http-nio-2] DEBUG o.s.w.r.f.client.ExchangeFunctions - [10c01ac7] [edc6cecc-5] Response 200 OK
+2026-05-16 12:47:56.184 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [10c01ac7] [edc6cecc-5] Decoded [AnthropicResponse[choices=[OpenRouterChoice[message=AnthropicMessage[role=assistant, content=web]]]]]
+2026-05-16 12:47:56.185 [http-nio-8080-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-05-16 12:47:56.194 [http-nio-8080-exec-1] DEBUG o.s.w.r.f.client.ExchangeFunctions - [1cbc32a0] HTTP GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 12:47:56.436 [reactor-http-nio-3] DEBUG o.s.w.r.f.client.ExchangeFunctions - [1cbc32a0] [e963c252-3] Response 403 FORBIDDEN
+2026-05-16 12:47:56.443 [reactor-http-nio-3] DEBUG org.springframework.web.HttpLogging - [1cbc32a0] [e963c252-3] Read 1072 bytes
+2026-05-16 12:47:56.451 [http-nio-8080-exec-1] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 12:47:56.452 [http-nio-8080-exec-1] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-05-16 12:47:56.453 [http-nio-8080-exec-1] DEBUG o.s.w.r.f.client.ExchangeFunctions - [166c4330] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:47:56.455 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [166c4330] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=1500, messages=[AnthropicMessage[role= (truncated)...]
+2026-05-16 12:47:56.496 [reactor-http-nio-2] DEBUG o.s.w.r.f.client.ExchangeFunctions - [166c4330] [edc6cecc-6] Response 402 PAYMENT_REQUIRED
+2026-05-16 12:47:56.497 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [166c4330] [edc6cecc-6] Read 317 bytes
+2026-05-16 12:47:56.498 [http-nio-8080-exec-1] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:47:56.499 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 12:47:56.500 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ChatResponse[reply=I'm having trouble connecting right now. Please try again in a moment., type=mixe (truncated)...]
+2026-05-16 12:47:56.506 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:17:51.824 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 731 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 13:17:51.825 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 13:17:51.825 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 13:17:52.274 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-16 13:17:52.305 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 463 ms
+2026-05-16 13:17:52.581 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2026-05-16 13:17:52.596 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-16 13:17:52.642 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-16 13:17:52.656 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-16 13:17:52.689 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-16 13:17:52.693 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.093 seconds (process running for 1.439)
+2026-05-16 13:18:09.050 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 13:18:09.072 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 13:18:09.099 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:18:09.109 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 13:18:09.127 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:18:09.132 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 13:18:09.132 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 13:18:09.132 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:18:09.133 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 13:18:09.133 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:18:11.139 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/chat", parameters={}
+2026-05-16 13:18:11.140 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#chat(ChatRequest)
+2026-05-16 13:18:11.149 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ChatRequest[message=hello, history=[]]]
+2026-05-16 13:18:11.158 [http-nio-8080-exec-4] INFO  c.p.controller.ChatController - Received chat request: hello
+2026-05-16 13:18:11.159 [http-nio-8080-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: hello
+2026-05-16 13:18:11.169 [http-nio-8080-exec-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [53ee146b] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:18:11.329 [reactor-http-nio-4] DEBUG org.springframework.web.HttpLogging - [53ee146b] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=64, messages=[AnthropicMessage[role=sy (truncated)...]
+2026-05-16 13:18:12.865 [reactor-http-nio-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [53ee146b] [4e4177c4-1] Response 200 OK
+2026-05-16 13:18:12.988 [reactor-http-nio-4] DEBUG org.springframework.web.HttpLogging - [53ee146b] [4e4177c4-1] Decoded [AnthropicResponse[choices=[OpenRouterChoice[message=AnthropicMessage[role=assistant, content=web]]]]]
+2026-05-16 13:18:12.989 [http-nio-8080-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-05-16 13:18:12.989 [http-nio-8080-exec-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [7c3b1512] HTTP GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:18:13.190 [reactor-http-nio-5] DEBUG o.s.w.r.f.client.ExchangeFunctions - [7c3b1512] [fdcef0bd-1] Response 403 FORBIDDEN
+2026-05-16 13:18:13.195 [reactor-http-nio-5] DEBUG org.springframework.web.HttpLogging - [7c3b1512] [fdcef0bd-1] Read 1072 bytes
+2026-05-16 13:18:13.198 [http-nio-8080-exec-4] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:18:13.199 [http-nio-8080-exec-4] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-05-16 13:18:13.199 [http-nio-8080-exec-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [14ee9f55] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:18:13.201 [reactor-http-nio-4] DEBUG org.springframework.web.HttpLogging - [14ee9f55] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=1500, messages=[AnthropicMessage[role= (truncated)...]
+2026-05-16 13:18:13.252 [reactor-http-nio-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [14ee9f55] [4e4177c4-2] Response 402 PAYMENT_REQUIRED
+2026-05-16 13:18:13.254 [reactor-http-nio-4] DEBUG org.springframework.web.HttpLogging - [14ee9f55] [4e4177c4-2] Read 317 bytes
+2026-05-16 13:18:13.256 [http-nio-8080-exec-4] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:18:13.257 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:18:13.257 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ChatResponse[reply=I'm having trouble connecting right now. Please try again in a moment., type=mixe (truncated)...]
+2026-05-16 13:18:13.259 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:19:26.540 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 13:19:26.569 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 13:19:26.590 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:19:26.594 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 13:19:26.611 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:19:26.615 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 13:19:26.616 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 13:19:26.618 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:19:26.620 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 13:19:26.621 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:19:29.485 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/chat", parameters={}
+2026-05-16 13:19:29.488 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#chat(ChatRequest)
+2026-05-16 13:19:29.509 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ChatRequest[message=hello, history=[]]]
+2026-05-16 13:19:29.512 [http-nio-8080-exec-7] INFO  c.p.controller.ChatController - Received chat request: hello
+2026-05-16 13:19:29.515 [http-nio-8080-exec-7] DEBUG com.portfolio.service.ChatService - Handling chat message: hello
+2026-05-16 13:19:29.522 [http-nio-8080-exec-7] DEBUG o.s.w.r.f.client.ExchangeFunctions - [2ba36416] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:19:29.538 [reactor-http-nio-4] DEBUG org.springframework.web.HttpLogging - [2ba36416] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=64, messages=[AnthropicMessage[role=sy (truncated)...]
+2026-05-16 13:19:31.179 [reactor-http-nio-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [2ba36416] [4e4177c4-3] Response 200 OK
+2026-05-16 13:19:31.248 [reactor-http-nio-4] DEBUG org.springframework.web.HttpLogging - [2ba36416] [4e4177c4-3] Decoded [AnthropicResponse[choices=[OpenRouterChoice[message=AnthropicMessage[role=assistant, content=web]]]]]
+2026-05-16 13:19:31.250 [http-nio-8080-exec-7] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-05-16 13:19:31.253 [http-nio-8080-exec-7] DEBUG o.s.w.r.f.client.ExchangeFunctions - [7fc84043] HTTP GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:19:31.350 [reactor-http-nio-5] DEBUG o.s.w.r.f.client.ExchangeFunctions - [7fc84043] [fdcef0bd-2] Response 403 FORBIDDEN
+2026-05-16 13:19:31.356 [reactor-http-nio-5] DEBUG org.springframework.web.HttpLogging - [7fc84043] [fdcef0bd-2] Read 1072 bytes
+2026-05-16 13:19:31.361 [http-nio-8080-exec-7] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:19:31.361 [http-nio-8080-exec-7] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-05-16 13:19:31.363 [http-nio-8080-exec-7] DEBUG o.s.w.r.f.client.ExchangeFunctions - [82267f4] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:19:31.364 [reactor-http-nio-4] DEBUG org.springframework.web.HttpLogging - [82267f4] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=1500, messages=[AnthropicMessage[role= (truncated)...]
+2026-05-16 13:19:31.404 [reactor-http-nio-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [82267f4] [4e4177c4-4] Response 402 PAYMENT_REQUIRED
+2026-05-16 13:19:31.405 [reactor-http-nio-4] DEBUG org.springframework.web.HttpLogging - [82267f4] [4e4177c4-4] Read 317 bytes
+2026-05-16 13:19:31.406 [http-nio-8080-exec-7] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:19:31.406 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:19:31.407 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ChatResponse[reply=I'm having trouble connecting right now. Please try again in a moment., type=mixe (truncated)...]
+2026-05-16 13:19:31.407 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:26:40.031 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 1398 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 13:26:40.033 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 13:26:40.033 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 13:26:40.879 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-16 13:26:40.922 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 821 ms
+2026-05-16 13:26:41.179 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 5 mappings in 'requestMappingHandlerMapping'
+2026-05-16 13:26:41.192 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-16 13:26:41.231 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-16 13:26:41.247 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-16 13:26:41.289 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-16 13:26:41.294 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.848 seconds (process running for 2.326)
+2026-05-16 13:29:04.947 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 13:29:04.999 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 13:29:05.069 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:29:05.082 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 13:29:05.109 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:29:05.118 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 13:29:05.120 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 13:29:05.121 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:29:05.121 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 13:29:05.122 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:29:07.826 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/chat", parameters={}
+2026-05-16 13:29:07.832 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#chat(ChatRequest)
+2026-05-16 13:29:07.841 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ChatRequest[message=hello, history=[]]]
+2026-05-16 13:29:07.843 [http-nio-8080-exec-10] INFO  c.p.controller.ChatController - Received chat request: hello
+2026-05-16 13:29:07.843 [http-nio-8080-exec-10] DEBUG com.portfolio.service.ChatService - Handling chat message: hello
+2026-05-16 13:29:07.857 [http-nio-8080-exec-10] DEBUG o.s.w.r.f.client.ExchangeFunctions - [565bfe1a] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:29:07.976 [reactor-http-nio-6] DEBUG org.springframework.web.HttpLogging - [565bfe1a] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=64, messages=[AnthropicMessage[role=sy (truncated)...]
+2026-05-16 13:29:09.895 [reactor-http-nio-6] DEBUG o.s.w.r.f.client.ExchangeFunctions - [565bfe1a] [f621d86a-1] Response 200 OK
+2026-05-16 13:29:10.015 [reactor-http-nio-6] DEBUG org.springframework.web.HttpLogging - [565bfe1a] [f621d86a-1] Decoded [AnthropicResponse[choices=[OpenRouterChoice[message=AnthropicMessage[role=assistant, content=web]]]]]
+2026-05-16 13:29:10.015 [http-nio-8080-exec-10] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-05-16 13:29:10.016 [http-nio-8080-exec-10] DEBUG o.s.w.r.f.client.ExchangeFunctions - [47a02f95] HTTP GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:29:10.180 [reactor-http-nio-7] DEBUG o.s.w.r.f.client.ExchangeFunctions - [47a02f95] [ff39584a-1] Response 403 FORBIDDEN
+2026-05-16 13:29:10.181 [reactor-http-nio-7] DEBUG org.springframework.web.HttpLogging - [47a02f95] [ff39584a-1] Read 1072 bytes
+2026-05-16 13:29:10.185 [http-nio-8080-exec-10] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:29:10.185 [http-nio-8080-exec-10] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-05-16 13:29:10.186 [http-nio-8080-exec-10] DEBUG o.s.w.r.f.client.ExchangeFunctions - [67c70cbc] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:29:10.188 [reactor-http-nio-6] DEBUG org.springframework.web.HttpLogging - [67c70cbc] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=1500, messages=[AnthropicMessage[role= (truncated)...]
+2026-05-16 13:29:10.238 [reactor-http-nio-6] DEBUG o.s.w.r.f.client.ExchangeFunctions - [67c70cbc] [f621d86a-2] Response 402 PAYMENT_REQUIRED
+2026-05-16 13:29:10.238 [reactor-http-nio-6] DEBUG org.springframework.web.HttpLogging - [67c70cbc] [f621d86a-2] Read 317 bytes
+2026-05-16 13:29:10.239 [http-nio-8080-exec-10] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:29:10.239 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:29:10.239 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ChatResponse[reply=I'm having trouble connecting right now. Please try again in a moment., type=mixe (truncated)...]
+2026-05-16 13:29:10.241 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:36:02.482 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 2023 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 13:36:02.484 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 13:36:02.485 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 13:36:03.293 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-16 13:36:03.341 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 832 ms
+2026-05-16 13:36:03.515 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: anthropic/claude-sonnet-4-5, url: https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:03.771 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-16 13:36:03.776 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.694 seconds (process running for 1.967)
+2026-05-16 13:36:14.144 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 13:36:14.158 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 13:36:14.192 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:36:14.199 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 13:36:14.230 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:36:14.253 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 13:36:14.254 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 13:36:14.255 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:36:14.256 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 13:36:14.259 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:36:16.857 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/chat", parameters={}
+2026-05-16 13:36:16.858 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#chat(ChatRequest)
+2026-05-16 13:36:16.865 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ChatRequest[message=hello, history=[]]]
+2026-05-16 13:36:16.868 [http-nio-8080-exec-3] INFO  c.p.controller.ChatController - Received chat request: hello
+2026-05-16 13:36:16.869 [http-nio-8080-exec-3] DEBUG com.portfolio.service.ChatService - Handling chat message: hello
+2026-05-16 13:36:16.876 [http-nio-8080-exec-3] DEBUG o.s.w.r.f.client.ExchangeFunctions - [6257f575] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:16.930 [reactor-http-nio-8] DEBUG org.springframework.web.HttpLogging - [6257f575] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=64, messages=[AnthropicMessage[role=sy (truncated)...]
+2026-05-16 13:36:18.340 [reactor-http-nio-8] DEBUG o.s.w.r.f.client.ExchangeFunctions - [6257f575] [c0d761c8-1] Response 200 OK
+2026-05-16 13:36:18.710 [reactor-http-nio-8] DEBUG org.springframework.web.HttpLogging - [6257f575] [c0d761c8-1] Decoded [AnthropicResponse[choices=[OpenRouterChoice[message=AnthropicMessage[role=assistant, content=web]]]]]
+2026-05-16 13:36:18.710 [http-nio-8080-exec-3] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-05-16 13:36:18.711 [http-nio-8080-exec-3] DEBUG o.s.w.r.f.client.ExchangeFunctions - [6c90074f] HTTP GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:36:18.864 [reactor-http-nio-1] DEBUG o.s.w.r.f.client.ExchangeFunctions - [6c90074f] [1b645324-1] Response 403 FORBIDDEN
+2026-05-16 13:36:18.866 [reactor-http-nio-1] DEBUG org.springframework.web.HttpLogging - [6c90074f] [1b645324-1] Read 1072 bytes
+2026-05-16 13:36:18.868 [http-nio-8080-exec-3] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:36:18.868 [http-nio-8080-exec-3] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-05-16 13:36:18.869 [http-nio-8080-exec-3] DEBUG o.s.w.r.f.client.ExchangeFunctions - [68af9e05] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:18.870 [reactor-http-nio-8] DEBUG org.springframework.web.HttpLogging - [68af9e05] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=1500, messages=[AnthropicMessage[role= (truncated)...]
+2026-05-16 13:36:18.927 [reactor-http-nio-8] DEBUG o.s.w.r.f.client.ExchangeFunctions - [68af9e05] [c0d761c8-2] Response 402 PAYMENT_REQUIRED
+2026-05-16 13:36:18.928 [reactor-http-nio-8] DEBUG org.springframework.web.HttpLogging - [68af9e05] [c0d761c8-2] Read 317 bytes
+2026-05-16 13:36:18.929 [http-nio-8080-exec-3] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:18.931 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:36:18.932 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ChatResponse[reply=I'm having trouble connecting right now. Please try again in a moment., type=mixe (truncated)...]
+2026-05-16 13:36:18.934 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 13:36:30.501 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 2062 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-05-16 13:36:30.501 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-16 13:36:30.502 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-16 13:36:30.957 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-05-16 13:36:30.988 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 468 ms
+2026-05-16 13:36:31.109 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: anthropic/claude-sonnet-4-5, url: https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:31.276 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-05-16 13:36:31.279 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.021 seconds (process running for 1.306)
+2026-05-16 13:36:38.262 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/chat", parameters={}
+2026-05-16 13:36:38.271 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#chat(ChatRequest)
+2026-05-16 13:36:38.280 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [ChatRequest[message=hi, history=[MessageHistory[role=user, content=hello], MessageHistory[role=assis (truncated)...]
+2026-05-16 13:36:38.281 [http-nio-8080-exec-4] INFO  c.p.controller.ChatController - Received chat request: hi
+2026-05-16 13:36:38.281 [http-nio-8080-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: hi
+2026-05-16 13:36:38.283 [http-nio-8080-exec-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [29bcef74] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:38.289 [reactor-http-nio-8] DEBUG org.springframework.web.HttpLogging - [29bcef74] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=64, messages=[AnthropicMessage[role=sy (truncated)...]
+2026-05-16 13:36:48.329 [reactor-http-nio-8] DEBUG o.s.w.r.f.client.ExchangeFunctions - [29bcef74] [c0d761c8-3] Response 200 OK
+2026-05-16 13:36:51.205 [reactor-http-nio-8] DEBUG org.springframework.web.HttpLogging - [29bcef74] [c0d761c8-3] Decoded [AnthropicResponse[choices=[OpenRouterChoice[message=AnthropicMessage[role=assistant, content=persona (truncated)...]
+2026-05-16 13:36:51.206 [http-nio-8080-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-05-16 13:36:51.209 [http-nio-8080-exec-4] DEBUG o.s.w.r.f.client.ExchangeFunctions - [5c421097] HTTP POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:51.211 [reactor-http-nio-8] DEBUG org.springframework.web.HttpLogging - [5c421097] Encoding [AnthropicRequest[model=anthropic/claude-sonnet-4-5, maxTokens=1500, messages=[AnthropicMessage[role= (truncated)...]
+2026-05-16 13:36:51.274 [reactor-http-nio-8] DEBUG o.s.w.r.f.client.ExchangeFunctions - [5c421097] [c0d761c8-4] Response 402 PAYMENT_REQUIRED
+2026-05-16 13:36:51.275 [reactor-http-nio-8] DEBUG org.springframework.web.HttpLogging - [5c421097] [c0d761c8-4] Read 317 bytes
+2026-05-16 13:36:51.277 [http-nio-8080-exec-4] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:51.279 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 13:36:51.280 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ChatResponse[reply=I'm having trouble connecting right now. Please try again in a moment., type=pers (truncated)...]
+2026-05-16 13:36:51.282 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 14:09:39.816 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 14:09:39.870 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 14:09:39.890 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 14:09:39.892 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 14:09:39.944 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 14:09:39.944 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 14:09:39.969 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 14:09:39.969 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 14:09:40.005 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 14:09:40.009 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 14:09:40.018 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 14:09:40.020 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 14:09:40.021 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 14:09:40.021 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 14:09:40.021 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 14:09:40.029 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 14:09:40.030 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 14:09:40.031 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 14:09:40.031 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 14:09:40.033 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 14:23:54.990 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-16 14:23:55.014 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2026-05-16 14:23:55.172 [http-nio-8081-exec-2] INFO  c.p.controller.ChatController - Received chat request: hi
+2026-05-16 14:23:55.172 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Handling chat message: hi
+2026-05-16 14:23:58.007 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-05-16 14:23:58.008 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-05-16 14:23:58.208 [http-nio-8081-exec-2] ERROR c.p.service.GoogleSearchService - Google Search HTTP error 403 FORBIDDEN: {
+  "error": {
+    "code": 403,
+    "message": "Requests to this API customsearch method google.customsearch.v1.CustomSearchService.List are blocked.",
+    "errors": [
+      {
+        "message": "Requests to this API customsearch method google.customsearch.v1.CustomSearchService.List are blocked.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "apiName": "customsearch",
+          "methodName": "google.customsearch.v1.CustomSearchService.List",
+          "service": "customsearch.googleapis.com",
+          "consumer": "projects/895644203376"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "Requests to this API customsearch method google.customsearch.v1.CustomSearchService.List are blocked."
+      }
+    ]
+  }
+}
+
+2026-05-16 14:23:58.209 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-05-16 14:23:58.640 [http-nio-8081-exec-2] ERROR com.portfolio.service.ClaudeService - OpenRouter HTTP error 402 PAYMENT_REQUIRED: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 1160. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_3DctZj4MQI1AFgnSya1Xs2GrHH7"}
+2026-05-16 15:04:00.585 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:04:00.585 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:04:00.656 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:04:00.656 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:04:00.758 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:04:00.758 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:04:00.779 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:04:00.779 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:04:00.849 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:04:00.849 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:04:00.875 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:04:00.875 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:04:00.875 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:04:00.875 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:04:00.876 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:04:00.877 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:04:00.877 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:04:00.877 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:04:00.877 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:04:00.878 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:18:39.850 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:18:39.850 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:18:39.881 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:18:39.880 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:18:39.958 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:18:39.958 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:18:39.972 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:18:39.972 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:18:39.997 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:18:39.997 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:18:40.004 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:18:40.005 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:18:40.005 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:18:40.006 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:18:40.005 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:18:40.006 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:18:40.006 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:18:40.006 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:18:40.006 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:18:40.007 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:22:54.324 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:22:54.324 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:22:54.343 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:22:54.343 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:22:54.382 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:22:54.382 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:22:54.393 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:22:54.393 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:22:54.405 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:22:54.405 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:22:54.414 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:22:54.414 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 15:22:54.414 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:22:54.414 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 15:22:54.416 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:22:54.417 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:22:54.417 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 15:22:54.417 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 15:22:54.418 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 15:22:54.418 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 16:16:34.495 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 16:16:34.522 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 16:16:34.555 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 16:16:34.560 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 16:16:34.574 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-16 16:16:34.577 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-16 16:16:34.577 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-16 16:16:34.580 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-16 16:16:34.580 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-16 16:16:34.581 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

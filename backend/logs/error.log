@@ -1,0 +1,63 @@
+2026-05-16 12:44:44.004 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-05-16 12:45:20.777 [http-nio-8080-exec-7] ERROR c.p.service.GoogleSearchService - Google search failed for query 'Hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=Hello&num=4
+2026-05-16 12:45:20.830 [http-nio-8080-exec-7] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:46:45.064 [http-nio-8080-exec-10] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 12:46:45.550 [http-nio-8080-exec-10] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 12:47:56.451 [http-nio-8080-exec-1] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 12:47:56.498 [http-nio-8080-exec-1] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:18:13.198 [http-nio-8080-exec-4] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:18:13.256 [http-nio-8080-exec-4] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:19:31.361 [http-nio-8080-exec-7] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:19:31.406 [http-nio-8080-exec-7] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:29:10.185 [http-nio-8080-exec-10] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:29:10.239 [http-nio-8080-exec-10] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:18.868 [http-nio-8080-exec-3] ERROR c.p.service.GoogleSearchService - Google search failed for query 'hello': 403 Forbidden from GET https://www.googleapis.com/customsearch/v1?key=AIzaSyAJojJiORYAHQhy-IT0JDG8pt7TXOiCfSg&cx=YOUR_SEARCH_ENGINE_ID&q=hello&num=4
+2026-05-16 13:36:18.929 [http-nio-8080-exec-3] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 13:36:51.277 [http-nio-8080-exec-4] ERROR com.portfolio.service.ClaudeService - Claude API call failed: 402 Payment Required from POST https://openrouter.ai/api/v1/chat/completions
+2026-05-16 14:23:58.208 [http-nio-8081-exec-2] ERROR c.p.service.GoogleSearchService - Google Search HTTP error 403 FORBIDDEN: {
+  "error": {
+    "code": 403,
+    "message": "Requests to this API customsearch method google.customsearch.v1.CustomSearchService.List are blocked.",
+    "errors": [
+      {
+        "message": "Requests to this API customsearch method google.customsearch.v1.CustomSearchService.List are blocked.",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_SERVICE_BLOCKED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "apiName": "customsearch",
+          "methodName": "google.customsearch.v1.CustomSearchService.List",
+          "service": "customsearch.googleapis.com",
+          "consumer": "projects/895644203376"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "Requests to this API customsearch method google.customsearch.v1.CustomSearchService.List are blocked."
+      }
+    ]
+  }
+}
+
+2026-05-16 14:23:58.640 [http-nio-8081-exec-2] ERROR com.portfolio.service.ClaudeService - OpenRouter HTTP error 402 PAYMENT_REQUIRED: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 1160. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_3DctZj4MQI1AFgnSya1Xs2GrHH7"}

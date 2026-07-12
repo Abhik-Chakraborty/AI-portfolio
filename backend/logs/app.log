@@ -1,0 +1,40 @@
+2026-05-18 02:12:13.088 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-18 02:12:13.189 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-18 02:12:13.216 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-18 02:12:13.221 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-18 02:12:13.238 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-18 02:12:13.244 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-18 02:12:13.245 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-18 02:12:13.245 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-18 02:12:13.245 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-18 02:12:13.246 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-18 10:54:18.741 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-18 10:54:18.796 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-18 10:54:18.869 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-18 10:54:18.876 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-18 10:54:18.905 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-18 10:54:18.909 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-18 10:54:18.910 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-18 10:54:18.910 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-18 10:54:18.910 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-18 10:54:18.911 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-18 18:18:45.320 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-18 18:18:45.353 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-18 18:18:45.405 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-18 18:18:45.410 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-18 18:18:45.429 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-18 18:18:45.433 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-18 18:18:45.434 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-18 18:18:45.434 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-18 18:18:45.434 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-18 18:18:45.435 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-18 21:44:09.840 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-18 21:44:09.883 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-18 21:44:09.942 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-18 21:44:09.948 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-18 21:44:09.974 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-05-18 21:44:09.981 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
+2026-05-18 21:44:09.983 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
+2026-05-18 21:44:09.983 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-18 21:44:09.983 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
+2026-05-18 21:44:09.983 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

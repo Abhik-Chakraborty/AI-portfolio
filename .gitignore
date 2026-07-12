@@ -1,0 +1,6 @@
+# Local secrets (optional Spring config import — see backend/src/main/resources/application.properties)
+backend/config/local.properties
+
+# Gradle
+backend/.gradle/
+backend/build/
