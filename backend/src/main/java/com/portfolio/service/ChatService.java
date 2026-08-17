@@ -1,6 +1,7 @@
 package com.portfolio.service;
 
 import com.portfolio.model.ChatModels.*;
+import com.portfolio.model.PersonaData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -15,10 +16,13 @@ public class ChatService {
 
     private final ClaudeService claudeService;
     private final GoogleSearchService googleSearchService;
+    private final PersonaRetrievalService personaRetrievalService;
 
-    public ChatService(ClaudeService claudeService, GoogleSearchService googleSearchService) {
+    public ChatService(ClaudeService claudeService, GoogleSearchService googleSearchService,
+                        PersonaRetrievalService personaRetrievalService) {
         this.claudeService = claudeService;
         this.googleSearchService = googleSearchService;
+        this.personaRetrievalService = personaRetrievalService;
     }
 
     /**
@@ -35,22 +39,30 @@ public class ChatService {
         String intent = claudeService.classifyIntent(message);
         log.debug("Intent classified as: {}", intent);
 
-        // 2. If web question, fetch search results
+        // 2. Build the appropriate context block for the intent
         List<SearchResult> sources = Collections.emptyList();
-        String webContext = null;
+        String contextBlock;
 
         if ("web".equals(intent)) {
             sources = googleSearchService.search(message);
             if (!sources.isEmpty()) {
-                webContext = googleSearchService.formatResultsForPrompt(sources);
+                contextBlock = googleSearchService.formatResultsForPrompt(sources);
                 log.debug("Found {} web search results", sources.size());
             } else {
                 log.debug("No web results found, falling back to persona knowledge");
+                contextBlock = null;
             }
+        } else {
+            List<PersonaData.Chunk> chunks = personaRetrievalService.retrieve(message, 5);
+            if (chunks.isEmpty()) {
+                chunks = personaRetrievalService.defaultChunks();
+            }
+            contextBlock = personaRetrievalService.formatForPrompt(chunks);
+            log.debug("Retrieved {} persona chunks for query", chunks.size());
         }
 
-        // 3. Call Claude with appropriate context
-        String reply = claudeService.chat(message, history, webContext);
+        // 3. Call Claude with the retrieved/searched context
+        String reply = claudeService.chat(message, history, contextBlock);
 
         // 4. Determine response type
         String type = "personal";

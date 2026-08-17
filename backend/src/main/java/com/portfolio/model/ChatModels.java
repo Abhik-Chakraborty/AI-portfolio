@@ -1,5 +1,7 @@
 package com.portfolio.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class ChatModels {
@@ -28,21 +30,27 @@ public class ChatModels {
             String url
     ) {}
 
-    // ─── Google Custom Search API response ────────────────────
-    public record GoogleSearchResponse(
-            List<GoogleSearchItem> items
+    // ─── DuckDuckGo Instant Answer API response ────────────────
+    public record DuckDuckGoResponse(
+            @JsonProperty("Heading") String heading,
+            @JsonProperty("AbstractText") String abstractText,
+            @JsonProperty("AbstractURL") String abstractUrl,
+            @JsonProperty("Answer") String answer,
+            @JsonProperty("Definition") String definition,
+            @JsonProperty("DefinitionURL") String definitionUrl,
+            @JsonProperty("RelatedTopics") List<DuckDuckGoRelatedTopic> relatedTopics
     ) {}
 
-    public record GoogleSearchItem(
-            String title,
-            String snippet,
-            String link
+    public record DuckDuckGoRelatedTopic(
+            @JsonProperty("Text") String text,
+            @JsonProperty("FirstURL") String firstUrl
     ) {}
 
     // ─── OpenRouter (OpenAI-compatible) API request/response ──
     public record AnthropicRequest(
             String model,
             int max_tokens,
+            String reasoning_effort,   // keeps Gemini's "thinking" tokens from eating the whole budget
             List<AnthropicMessage> messages   // system prompt is a message with role "system"
     ) {}
 

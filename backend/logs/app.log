@@ -1,40 +1,531 @@
-2026-05-18 02:12:13.088 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
-2026-05-18 02:12:13.189 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
-2026-05-18 02:12:13.216 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-18 02:12:13.221 [http-nio-8080-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
-2026-05-18 02:12:13.238 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2026-05-18 02:12:13.244 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
-2026-05-18 02:12:13.245 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
-2026-05-18 02:12:13.245 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-18 02:12:13.245 [http-nio-8080-exec-9] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
-2026-05-18 02:12:13.246 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2026-05-18 10:54:18.741 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
-2026-05-18 10:54:18.796 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
-2026-05-18 10:54:18.869 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-18 10:54:18.876 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
-2026-05-18 10:54:18.905 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2026-05-18 10:54:18.909 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
-2026-05-18 10:54:18.910 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
-2026-05-18 10:54:18.910 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-18 10:54:18.910 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
-2026-05-18 10:54:18.911 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2026-05-18 18:18:45.320 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
-2026-05-18 18:18:45.353 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
-2026-05-18 18:18:45.405 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-18 18:18:45.410 [http-nio-8080-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
-2026-05-18 18:18:45.429 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2026-05-18 18:18:45.433 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
-2026-05-18 18:18:45.434 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
-2026-05-18 18:18:45.434 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-18 18:18:45.434 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
-2026-05-18 18:18:45.435 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2026-05-18 21:44:09.840 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
-2026-05-18 21:44:09.883 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
-2026-05-18 21:44:09.942 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-18 21:44:09.948 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
-2026-05-18 21:44:09.974 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2026-05-18 21:44:09.981 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/persona", parameters={}
-2026-05-18 21:44:09.983 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.portfolio.controller.ChatController#getPersona()
-2026-05-18 21:44:09.983 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-18 21:44:09.983 [http-nio-8080-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{linkedin=https://www.linkedin.com/in/abhik17/, initials=AC, tagline=Junior Backend & Full Stack Dev (truncated)...]
-2026-05-18 21:44:09.983 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-08-17 11:30:47.091 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 22915 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:30:47.093 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:30:47.093 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:30:47.523 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:30:47.553 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 442 ms
+2026-08-17 11:30:47.676 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: anthropic/claude-sonnet-4-5, url: https://openrouter.ai/api/v1/chat/completions
+2026-08-17 11:30:47.719 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:30:47.798 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:30:47.952 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:30:47.956 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.097 seconds (process running for 1.25)
+2026-08-17 11:31:10.616 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:31:10.621 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-08-17 11:31:41.018 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 23042 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:31:41.019 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:31:41.020 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:31:41.439 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:31:41.476 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 434 ms
+2026-08-17 11:31:41.608 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: anthropic/claude-sonnet-4-5, url: https://openrouter.ai/api/v1/chat/completions
+2026-08-17 11:31:41.651 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:31:41.724 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:31:41.882 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:31:41.885 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.422 seconds (process running for 1.72)
+2026-08-17 11:33:03.219 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:33:03.230 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2026-08-17 11:33:07.963 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 23553 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:33:07.964 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:33:07.964 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:33:08.381 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:33:08.410 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 426 ms
+2026-08-17 11:33:08.535 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: anthropic/claude-sonnet-4-5, url: https://openrouter.ai/api/v1/chat/completions
+2026-08-17 11:33:08.582 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:33:08.659 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:33:08.822 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-17 11:33:08.829 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-17 11:33:08.836 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2026-08-17 11:34:08.995 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 23708 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:34:08.996 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:34:08.996 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:34:09.388 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:34:09.419 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 405 ms
+2026-08-17 11:34:09.539 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: anthropic/claude-sonnet-4-5, url: https://openrouter.ai/api/v1/chat/completions
+2026-08-17 11:34:09.586 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:34:09.665 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:34:09.826 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:34:09.830 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.092 seconds (process running for 1.387)
+2026-08-17 11:34:14.791 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:34:14.794 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-08-17 11:34:14.871 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: yo
+2026-08-17 11:34:14.871 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: yo
+2026-08-17 11:34:15.899 [http-nio-8081-exec-1] WARN  com.portfolio.service.ClaudeService - Classification HTTP error 401 UNAUTHORIZED: {"error":{"message":"User not found.","code":401}}
+2026-08-17 11:34:15.899 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:34:15.919 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Retrieved 2 persona chunks for query
+2026-08-17 11:34:15.945 [http-nio-8081-exec-1] ERROR com.portfolio.service.ClaudeService - OpenRouter HTTP error 401 UNAUTHORIZED: {"error":{"message":"User not found.","code":401}}
+2026-08-17 11:35:57.562 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 23878 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:35:57.563 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:35:57.563 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:35:57.974 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:35:58.008 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 423 ms
+2026-08-17 11:35:58.160 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: anthropic/claude-sonnet-4-5, url: https://openrouter.ai/api/v1/chat/completions
+2026-08-17 11:35:58.205 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:35:58.282 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:35:58.433 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:35:58.436 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.11 seconds (process running for 1.379)
+2026-08-17 11:36:34.960 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:36:34.963 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-17 11:36:35.026 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: yo
+2026-08-17 11:36:35.027 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: yo
+2026-08-17 11:36:36.082 [http-nio-8081-exec-1] WARN  com.portfolio.service.ClaudeService - Classification HTTP error 401 UNAUTHORIZED: {"error":{"message":"User not found.","code":401}}
+2026-08-17 11:36:36.082 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:36:36.104 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Retrieved 2 persona chunks for query
+2026-08-17 11:36:36.126 [http-nio-8081-exec-1] ERROR com.portfolio.service.ClaudeService - OpenRouter HTTP error 401 UNAUTHORIZED: {"error":{"message":"User not found.","code":401}}
+2026-08-17 11:38:42.960 [http-nio-8081-exec-4] INFO  c.p.controller.ChatController - Received chat request: What did you do at Salesforce?
+2026-08-17 11:38:42.961 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: What did you do at Salesforce?
+2026-08-17 11:38:43.322 [http-nio-8081-exec-4] WARN  com.portfolio.service.ClaudeService - Classification HTTP error 401 UNAUTHORIZED: {"error":{"message":"User not found.","code":401}}
+2026-08-17 11:38:43.322 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:38:43.348 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 11:38:43.369 [http-nio-8081-exec-4] ERROR com.portfolio.service.ClaudeService - OpenRouter HTTP error 401 UNAUTHORIZED: {"error":{"message":"User not found.","code":401}}
+2026-08-17 11:39:38.207 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 24287 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:39:38.208 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:39:38.208 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:39:38.740 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:39:38.779 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 547 ms
+2026-08-17 11:39:38.955 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: anthropic/claude-sonnet-4-5, url: https://openrouter.ai/api/v1/chat/completions
+2026-08-17 11:39:39.014 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:39:39.167 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:39:39.355 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:39:39.359 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.447 seconds (process running for 1.623)
+2026-08-17 11:39:54.427 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:39:54.437 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2026-08-17 11:39:54.499 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: What did you do at Salesforce?
+2026-08-17 11:39:54.499 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: What did you do at Salesforce?
+2026-08-17 11:39:56.833 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 11:39:56.834 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:39:56.872 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 11:39:56.924 [http-nio-8081-exec-1] ERROR com.portfolio.service.ClaudeService - OpenRouter HTTP error 402 PAYMENT_REQUIRED: {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 1153. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"limit_source":"openrouter_credits","remedy_hint":"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.","provider_name":null,"previous_errors":[{"code":402,"message":"This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 1153. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account"},{"code":402,"message":"This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 1153. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account"},{"code":402,"message":"This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 1153. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account"},{"code":402,"message":"This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 1153. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account"},{"code":402,"message":"This request requires more credits, or fewer max_tokens. You requested up to 1500 tokens, but can only afford 1153. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account"}]}},"user_id":"user_3DctZj4MQI1AFgnSya1Xs2GrHH7"}
+2026-08-17 11:46:19.308 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 24898 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:46:19.309 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:46:19.309 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:46:19.709 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:46:19.738 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 411 ms
+2026-08-17 11:46:19.865 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-3.6-flash, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 11:46:19.916 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:46:20.037 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:46:20.232 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:46:20.236 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.187 seconds (process running for 1.349)
+2026-08-17 11:46:35.847 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:46:35.849 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-17 11:46:35.902 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: What did you do at Salesforce?
+2026-08-17 11:46:35.902 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: What did you do at Salesforce?
+2026-08-17 11:46:39.499 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:46:39.523 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 11:46:53.762 [http-nio-8081-exec-3] INFO  c.p.controller.ChatController - Received chat request: do you have a girlfriend?
+2026-08-17 11:46:53.763 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Handling chat message: do you have a girlfriend?
+2026-08-17 11:46:56.448 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:46:56.466 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 11:47:05.450 [http-nio-8081-exec-4] INFO  c.p.controller.ChatController - Received chat request: hey there
+2026-08-17 11:47:05.451 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: hey there
+2026-08-17 11:47:07.031 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:47:07.034 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Retrieved 2 persona chunks for query
+2026-08-17 11:48:39.420 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 25085 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:48:39.423 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:48:39.426 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:48:40.138 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:48:40.167 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 681 ms
+2026-08-17 11:48:40.314 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-3.6-flash, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 11:48:40.359 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:48:40.433 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:48:40.579 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-17 11:48:40.587 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-17 11:48:40.595 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2026-08-17 11:53:44.843 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 25593 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:53:44.844 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:53:44.845 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:53:45.320 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:53:45.347 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 482 ms
+2026-08-17 11:53:45.478 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-3.6-flash, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 11:53:45.518 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:53:45.592 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:53:45.791 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:53:45.795 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.197 seconds (process running for 1.353)
+2026-08-17 11:54:02.223 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:54:02.225 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-17 11:54:02.282 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: What is Kubernetes?
+2026-08-17 11:54:02.283 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: What is Kubernetes?
+2026-08-17 11:54:06.603 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:54:06.627 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Retrieved 4 persona chunks for query
+2026-08-17 11:56:03.798 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 25886 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:56:03.799 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:56:03.800 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:56:04.196 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:56:04.225 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 408 ms
+2026-08-17 11:56:04.381 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-3.6-flash, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 11:56:04.432 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:56:04.517 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:56:04.707 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:56:04.712 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.132 seconds (process running for 1.268)
+2026-08-17 11:56:25.415 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:56:25.418 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-17 11:56:25.477 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: What is Kubernetes?
+2026-08-17 11:56:25.477 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: What is Kubernetes?
+2026-08-17 11:56:43.266 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-17 11:56:43.267 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-17 11:56:43.571 [http-nio-8081-exec-1] ERROR c.p.service.GoogleSearchService - DuckDuckGo Search HTTP error 200 OK: 
+2026-08-17 11:56:43.572 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-08-17 11:57:01.539 [http-nio-8081-exec-3] INFO  c.p.controller.ChatController - Received chat request: What did you do at Salesforce?
+2026-08-17 11:57:01.539 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Handling chat message: What did you do at Salesforce?
+2026-08-17 11:57:20.247 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 11:57:20.249 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:57:20.314 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 11:58:32.137 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 26185 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 11:58:32.138 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 11:58:32.138 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 11:58:32.578 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 11:58:32.617 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 460 ms
+2026-08-17 11:58:32.764 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-3.6-flash, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 11:58:32.831 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 11:58:32.977 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 11:58:33.150 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 11:58:33.154 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.295 seconds (process running for 1.566)
+2026-08-17 11:58:47.643 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 11:58:47.646 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-17 11:58:47.704 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: What is Kubernetes?
+2026-08-17 11:58:47.704 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: What is Kubernetes?
+2026-08-17 11:59:02.617 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-17 11:59:02.618 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-17 11:59:02.858 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Found 4 web search results
+2026-08-17 11:59:14.652 [http-nio-8081-exec-2] INFO  c.p.controller.ChatController - Received chat request: do you have a girlfriend?
+2026-08-17 11:59:14.653 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Handling chat message: do you have a girlfriend?
+2026-08-17 11:59:38.856 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 11:59:38.858 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 11:59:38.913 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 12:01:38.920 [http-nio-8081-exec-4] INFO  c.p.controller.ChatController - Received chat request: hi
+2026-08-17 12:01:38.925 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: hi
+2026-08-17 12:01:52.023 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 26560 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 12:01:52.025 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 12:01:52.026 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 12:01:52.531 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 12:01:52.565 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 514 ms
+2026-08-17 12:01:52.693 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-3.6-flash, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 12:01:52.751 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 12:01:52.836 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 12:01:52.991 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-17 12:01:52.998 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-17 12:01:53.004 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2026-08-17 12:02:09.000 [reactor-http-nio-2] WARN  r.n.http.client.HttpClientConnect - [37bf10fc-5, L:/192.168.1.38:55592 - R:generativelanguage.googleapis.com/172.217.117.4:443] The connection observed an error
+io.netty.handler.timeout.ReadTimeoutException: null
+2026-08-17 12:02:09.065 [http-nio-8081-exec-4] WARN  com.portfolio.service.ClaudeService - Intent classification failed, defaulting to personal: null
+2026-08-17 12:02:09.066 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:02:09.069 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Retrieved 2 persona chunks for query
+2026-08-17 12:08:22.817 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 27098 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 12:08:22.817 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 12:08:22.818 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 12:08:23.285 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 12:08:23.316 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 478 ms
+2026-08-17 12:08:23.450 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-3.6-flash, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 12:08:23.512 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 12:08:23.582 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 12:08:23.720 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 12:08:23.723 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.355 seconds (process running for 1.644)
+2026-08-17 12:09:22.489 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 12:09:22.501 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2026-08-17 12:09:25.591 [http-nio-8081-exec-3] INFO  c.p.controller.ChatController - Received chat request: hello
+2026-08-17 12:09:25.591 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Handling chat message: hello
+2026-08-17 12:09:27.394 [http-nio-8081-exec-3] WARN  com.portfolio.service.ClaudeService - Classification HTTP error 429 TOO_MANY_REQUESTS: [{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 32.668634879s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "32s"
+      }
+    ]
+  }
+}
+]
+2026-08-17 12:09:27.394 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:09:27.416 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Retrieved 2 persona chunks for query
+2026-08-17 12:09:27.626 [http-nio-8081-exec-3] ERROR com.portfolio.service.ClaudeService - OpenRouter HTTP error 429 TOO_MANY_REQUESTS: [{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 32.325483419s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "32s"
+      }
+    ]
+  }
+}
+]
+2026-08-17 12:29:42.020 [http-nio-8081-exec-4] INFO  c.p.controller.ChatController - Received chat request: hello
+2026-08-17 12:29:42.026 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: hello
+2026-08-17 12:29:48.960 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 12:29:48.962 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:29:48.970 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Retrieved 2 persona chunks for query
+2026-08-17 12:29:49.484 [http-nio-8081-exec-4] ERROR com.portfolio.service.ClaudeService - OpenRouter HTTP error 429 TOO_MANY_REQUESTS: [{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 10.561986477s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "20"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "10s"
+      }
+    ]
+  }
+}
+]
+2026-08-17 12:35:33.278 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 28880 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 12:35:33.278 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 12:35:33.279 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 12:35:33.728 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 12:35:33.771 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 466 ms
+2026-08-17 12:35:33.905 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-flash-lite-latest, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 12:35:33.965 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 12:35:34.043 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 12:35:34.193 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 12:35:34.197 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.206 seconds (process running for 1.391)
+2026-08-17 12:35:54.524 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 12:35:54.528 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-17 12:35:54.579 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: What are your strengths?
+2026-08-17 12:35:54.579 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: What are your strengths?
+2026-08-17 12:35:56.719 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 12:35:56.719 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:35:56.748 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 12:35:57.882 [http-nio-8081-exec-2] INFO  c.p.controller.ChatController - Received chat request: What is Docker?
+2026-08-17 12:35:57.882 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Handling chat message: What is Docker?
+2026-08-17 12:35:59.579 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-17 12:35:59.584 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-17 12:35:59.802 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Found 3 web search results
+2026-08-17 12:38:49.845 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 29186 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 12:38:49.846 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 12:38:49.847 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 12:38:50.302 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 12:38:50.349 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 481 ms
+2026-08-17 12:38:50.474 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-flash-lite-latest, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 12:38:50.545 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 12:38:50.630 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 12:38:50.771 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-17 12:38:50.777 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-17 12:38:50.785 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2026-08-17 12:40:00.874 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 29336 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 12:40:00.875 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 12:40:00.875 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 12:40:01.315 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 12:40:01.346 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 452 ms
+2026-08-17 12:40:01.472 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-flash-lite-latest, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 12:40:01.528 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 12:40:01.606 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 13 chunks
+2026-08-17 12:40:01.739 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 12:40:01.743 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.137 seconds (process running for 1.515)
+2026-08-17 12:40:17.750 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 12:40:17.753 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-08-17 12:40:27.459 [http-nio-8081-exec-3] INFO  c.p.controller.ChatController - Received chat request: how much experience you have ?
+2026-08-17 12:40:27.460 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Handling chat message: how much experience you have ?
+2026-08-17 12:40:29.022 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 12:40:29.022 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:40:29.052 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Retrieved 3 persona chunks for query
+2026-08-17 12:40:44.713 [http-nio-8081-exec-4] INFO  c.p.controller.ChatController - Received chat request: how are you ?
+2026-08-17 12:40:44.715 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: how are you ?
+2026-08-17 12:40:45.823 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 12:40:45.824 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:40:45.838 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Retrieved 1 persona chunks for query
+2026-08-17 12:40:59.833 [http-nio-8081-exec-5] INFO  c.p.controller.ChatController - Received chat request: good, very good
+2026-08-17 12:40:59.836 [http-nio-8081-exec-5] DEBUG com.portfolio.service.ChatService - Handling chat message: good, very good
+2026-08-17 12:41:00.837 [http-nio-8081-exec-5] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 12:41:00.837 [http-nio-8081-exec-5] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:41:00.842 [http-nio-8081-exec-5] DEBUG com.portfolio.service.ChatService - Retrieved 1 persona chunks for query
+2026-08-17 12:41:23.699 [http-nio-8081-exec-6] INFO  c.p.controller.ChatController - Received chat request: how many places you have gone on vacation ?
+2026-08-17 12:41:23.701 [http-nio-8081-exec-6] DEBUG com.portfolio.service.ChatService - Handling chat message: how many places you have gone on vacation ?
+2026-08-17 12:41:24.901 [http-nio-8081-exec-6] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 12:41:24.902 [http-nio-8081-exec-6] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:41:24.911 [http-nio-8081-exec-6] DEBUG com.portfolio.service.ChatService - Retrieved 3 persona chunks for query
+2026-08-17 12:41:46.452 [http-nio-8081-exec-7] INFO  c.p.controller.ChatController - Received chat request: tell me about two sum problem
+2026-08-17 12:41:46.454 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - Handling chat message: tell me about two sum problem
+2026-08-17 12:41:47.335 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-17 12:41:47.335 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-17 12:41:47.599 [http-nio-8081-exec-7] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'tell me about two sum problem'
+2026-08-17 12:41:47.599 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-08-17 12:45:50.928 [http-nio-8081-exec-8] INFO  c.p.controller.ChatController - Received chat request: cool
+2026-08-17 12:45:50.930 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - Handling chat message: cool
+2026-08-17 12:45:51.942 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-17 12:45:51.942 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-17 12:45:52.179 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - Found 4 web search results
+2026-08-17 12:46:16.076 [http-nio-8081-exec-9] INFO  c.p.controller.ChatController - Received chat request: no i was saying cool solution
+2026-08-17 12:46:16.077 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - Handling chat message: no i was saying cool solution
+2026-08-17 12:46:17.038 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 12:46:17.038 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:46:17.049 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - Retrieved 2 persona chunks for query
+2026-08-17 12:46:28.908 [http-nio-8081-exec-10] INFO  c.p.controller.ChatController - Received chat request: What are your strengths?
+2026-08-17 12:46:28.909 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - Handling chat message: What are your strengths?
+2026-08-17 12:46:29.779 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 12:46:29.779 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 12:46:29.784 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 12:51:31.695 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: what's the weather in noida ?
+2026-08-17 12:51:31.698 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: what's the weather in noida ?
+2026-08-17 12:51:33.014 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-17 12:51:33.015 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-17 12:51:33.207 [http-nio-8081-exec-1] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'what's the weather in noida ?'
+2026-08-17 12:51:33.207 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-08-17 12:56:28.030 [http-nio-8081-exec-2] INFO  c.p.controller.ChatController - Received chat request: do you know the solution of Regular Expression Matching ?
+2026-08-17 12:56:28.031 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Handling chat message: do you know the solution of Regular Expression Matching ?
+2026-08-17 12:56:29.016 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-17 12:56:29.016 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-17 12:56:29.195 [http-nio-8081-exec-2] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'do you know the solution of Regular Expression Matching ?'
+2026-08-17 12:56:29.195 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-08-17 13:02:32.448 [http-nio-8081-exec-3] INFO  c.p.controller.ChatController - Received chat request: how many question have you solved in leetcode ?
+2026-08-17 13:02:32.450 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Handling chat message: how many question have you solved in leetcode ?
+2026-08-17 13:02:33.775 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 13:02:33.776 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 13:02:33.790 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-08-17 13:42:49.747 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 32524 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-08-17 13:42:49.748 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-08-17 13:42:49.748 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-17 13:42:50.159 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-08-17 13:42:50.189 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 421 ms
+2026-08-17 13:42:50.329 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-flash-lite-latest, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-08-17 13:42:50.429 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-08-17 13:42:50.509 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 14 chunks
+2026-08-17 13:42:50.682 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-08-17 13:42:50.686 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.275 seconds (process running for 1.446)
+2026-08-17 13:43:21.413 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-17 13:43:21.417 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-08-17 13:43:21.474 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: how many leetcode questions have you solved?
+2026-08-17 13:43:21.474 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: how many leetcode questions have you solved?
+2026-08-17 13:43:23.248 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 13:43:23.249 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 13:43:23.278 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Retrieved 3 persona chunks for query
+2026-08-17 13:45:10.430 [http-nio-8081-exec-3] INFO  c.p.controller.ChatController - Received chat request: hi
+2026-08-17 13:45:10.431 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Handling chat message: hi
+2026-08-17 13:45:11.303 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-17 13:45:11.303 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-17 13:45:11.570 [http-nio-8081-exec-3] DEBUG com.portfolio.service.ChatService - Found 3 web search results
+2026-08-17 13:45:34.677 [http-nio-8081-exec-4] INFO  c.p.controller.ChatController - Received chat request: how many question you solved in leetcode ?
+2026-08-17 13:45:34.680 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: how many question you solved in leetcode ?
+2026-08-17 13:45:35.673 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
+2026-08-17 13:45:35.674 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
+2026-08-17 13:45:35.683 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query

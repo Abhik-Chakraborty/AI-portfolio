@@ -4,3 +4,5 @@ backend/config/local.properties
 # Gradle
 backend/.gradle/
 backend/build/
+
+PROJECT_OVERVIEW.md

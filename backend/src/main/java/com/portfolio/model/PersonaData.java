@@ -1,6 +1,7 @@
 package com.portfolio.model;
 
 import org.springframework.stereotype.Component;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -67,6 +68,11 @@ public class PersonaData {
             "Git", "Docker", "Postman", "IntelliJ IDEA", "VS Code" // Your actual tools
     );
 
+    // ─── CODING PRACTICE ───────────────────────────────────────
+    public static final String LEETCODE_STATS =
+            "I've solved 338 problems on LeetCode — 142 Easy, 181 Medium, and 15 Hard. " +
+            "Profile: https://leetcode.com/u/Abhik_Chakraborty/";
+
     // ─── STRENGTHS & WEAKNESSES ────────────────────────────────
     public static final List<String> STRENGTHS = List.of(
             "Quick learner — can pick up new frameworks and languages fast",
@@ -105,9 +111,49 @@ public class PersonaData {
             """;
 
     /**
-     * Builds the full system prompt injected into every Claude API call.
+     * A single retrievable unit of persona knowledge, indexed by PersonaRetrievalService.
      */
-    public static String buildSystemPrompt() {
+    public record Chunk(String id, String category, String text) {}
+
+    /**
+     * Splits the persona data above into retrievable chunks for RAG.
+     * Edit the fields above, not this method, to change what's available to retrieve.
+     */
+    public static List<Chunk> chunks() {
+        List<Chunk> chunks = new ArrayList<>();
+
+        chunks.add(new Chunk("bio", "About", "Name: %s. Role: %s. Location: %s. %s"
+                .formatted(NAME, TAGLINE, LOCATION, EXPERIENCE_SUMMARY)));
+
+        for (int i = 0; i < WORK_HISTORY.size(); i++) {
+            chunks.add(new Chunk("work-" + i, "Work History", WORK_HISTORY.get(i)));
+        }
+
+        for (int i = 0; i < PROJECTS.size(); i++) {
+            chunks.add(new Chunk("project-" + i, "Projects", PROJECTS.get(i)));
+        }
+
+        chunks.add(new Chunk("tech-stack", "Tech Stack", "Languages: %s. Frameworks: %s. Databases: %s. Tools: %s"
+                .formatted(String.join(", ", LANGUAGES), String.join(", ", FRAMEWORKS),
+                        String.join(", ", DATABASES), String.join(", ", TOOLS))));
+
+        chunks.add(new Chunk("leetcode", "Coding Practice", LEETCODE_STATS));
+        chunks.add(new Chunk("strengths", "Strengths", String.join(" ", STRENGTHS)));
+        chunks.add(new Chunk("weaknesses", "Weaknesses", String.join(" ", WEAKNESSES)));
+        chunks.add(new Chunk("education", "Education", EDUCATION));
+        chunks.add(new Chunk("availability", "Availability", AVAILABILITY));
+        chunks.add(new Chunk("relationship", "Personal Life", RELATIONSHIP_GUIDANCE));
+        chunks.add(new Chunk("contact", "Contact", "Email: %s. GitHub: %s. LinkedIn: %s"
+                .formatted(EMAIL, GITHUB, LINKEDIN)));
+
+        return chunks;
+    }
+
+    /**
+     * The identity/style instructions injected into every "personal" Claude call, on top of
+     * whichever chunks PersonaRetrievalService retrieves for the specific question asked.
+     */
+    public static String corePrompt() {
         return """
                 You are an AI twin and portfolio assistant for %s (%s).
                 Speak in first person, as if you ARE this person.
@@ -115,69 +161,13 @@ public class PersonaData {
                 Never say "I am an AI" — you are their portfolio persona.
                 Rephrase information naturally each time — never copy-paste verbatim.
                 If you don't know something personal about them, say so honestly.
-                
+
                 === CODING PROBLEMS & CODE FORMATTING ===
                 When providing coding solutions:
                 - Always respond in JAVA language unless explicitly asked for another language
                 - Wrap ALL code in markdown code blocks with java syntax highlighting: ```java ... ```
                 - Include clear explanations before and after the code
                 - For complex problems, break down the solution step-by-step
-                
-                === ABOUT ME ===
-                Name: %s
-                Role: %s
-                Location: %s
-                
-                === EXPERIENCE ===
-                %s
-                
-                Work History:
-                %s
-                
-                === PROJECTS ===
-                %s
-                
-                === TECH STACK ===
-                Languages: %s
-                Frameworks: %s
-                Databases: %s
-                Tools: %s
-                
-                === STRENGTHS ===
-                %s
-                
-                === WEAKNESSES ===
-                %s
-                
-                === EDUCATION ===
-                %s
-                
-                === AVAILABILITY ===
-                %s
-                
-                === PERSONAL LIFE — GIRLFRIEND / RELATIONSHIP ===
-                %s
-                
-                === CONTACT ===
-                Email: %s
-                GitHub: %s
-                LinkedIn: %s
-                """.formatted(
-                NAME, INITIALS,
-                NAME, TAGLINE, LOCATION,
-                EXPERIENCE_SUMMARY,
-                String.join("\n", WORK_HISTORY),
-                String.join("\n", PROJECTS),
-                String.join(", ", LANGUAGES),
-                String.join(", ", FRAMEWORKS),
-                String.join(", ", DATABASES),
-                String.join(", ", TOOLS),
-                String.join("\n", STRENGTHS),
-                String.join("\n", WEAKNESSES),
-                EDUCATION,
-                AVAILABILITY,
-                RELATIONSHIP_GUIDANCE,
-                EMAIL, GITHUB, LINKEDIN
-        );
+                """.formatted(NAME, INITIALS);
     }
 }

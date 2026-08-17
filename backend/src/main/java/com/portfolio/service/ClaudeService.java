@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
 public class ClaudeService {
 
     private static final Logger log = LoggerFactory.getLogger(ClaudeService.class);
+    private static final String REASONING_EFFORT = "minimal";
 
     private final WebClient webClient;
 
@@ -50,8 +51,8 @@ public class ClaudeService {
         log.info("ClaudeService initialised — model: {}, url: {}", model, apiUrl);
     }
 
-    public String chat(String userMessage, List<MessageHistory> history, String webSearchContext) {
-        String systemPrompt = buildSystemPrompt(webSearchContext);
+    public String chat(String userMessage, List<MessageHistory> history, String contextBlock) {
+        String systemPrompt = buildSystemPrompt(contextBlock);
         try {
             return complete(systemPrompt, history, userMessage, 1500);
         } catch (WebClientResponseException e) {
@@ -84,6 +85,7 @@ public class ClaudeService {
             AnthropicRequest request = new AnthropicRequest(
                     model,
                     16,
+                    REASONING_EFFORT,
                     List.of(
                             new AnthropicMessage("system", "You are a message classifier. Respond with only one word: personal or web."),
                             new AnthropicMessage("user", classificationPrompt)
@@ -112,7 +114,7 @@ public class ClaudeService {
     private String complete(String systemPrompt, List<MessageHistory> history,
                             String userMessage, int maxTokens) {
         List<AnthropicMessage> messages = buildMessageHistory(systemPrompt, history, userMessage);
-        AnthropicRequest request = new AnthropicRequest(model, maxTokens, messages);
+        AnthropicRequest request = new AnthropicRequest(model, maxTokens, REASONING_EFFORT, messages);
         AnthropicResponse response = post(request);
 
         if (response == null || response.choices() == null || response.choices().isEmpty()) {
@@ -150,13 +152,16 @@ public class ClaudeService {
         return messages;
     }
 
-    private String buildSystemPrompt(String webContext) {
-        String base = PersonaData.buildSystemPrompt();
-        if (webContext != null && !webContext.isBlank()) {
-            return base + "\n\n" + webContext +
+    private String buildSystemPrompt(String contextBlock) {
+        String base = PersonaData.corePrompt();
+        if (contextBlock == null || contextBlock.isBlank()) {
+            return base;
+        }
+        if (contextBlock.contains("WEB SEARCH RESULTS")) {
+            return base + "\n\n" + contextBlock +
                     "\n\nFor this question, use the web search results above. " +
                     "Explain in simple language and cite your sources at the end.";
         }
-        return base;
+        return base + "\n\n" + contextBlock;
     }
 }

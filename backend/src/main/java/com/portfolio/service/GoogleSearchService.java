@@ -1,6 +1,8 @@
 package com.portfolio.service;
 
-import com.portfolio.model.ChatModels.GoogleSearchResponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.portfolio.model.ChatModels.DuckDuckGoRelatedTopic;
+import com.portfolio.model.ChatModels.DuckDuckGoResponse;
 import com.portfolio.model.ChatModels.SearchResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,63 +13,99 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
+/**
+ * Web search via DuckDuckGo's Instant Answer API — free, no API key, no signup.
+ * Returns abstracts/definitions/related-topic blurbs rather than full web results,
+ * so coverage is strongest for well-known topics (companies, concepts, people) and
+ * weaker for long-tail or how-to questions.
+ */
 @Service
 public class GoogleSearchService {
 
     private static final Logger log = LoggerFactory.getLogger(GoogleSearchService.class);
+    private static final int MAX_RESULTS = 4;
 
     private final WebClient webClient;
+    private final ObjectMapper objectMapper;
 
-    @Value("${google.search.api.key}")
-    private String apiKey;
-
-    @Value("${google.search.engine.id}")
-    private String searchEngineId;
-
-    @Value("${google.search.url}")
+    @Value("${duckduckgo.search.url}")
     private String searchUrl;
 
-    public GoogleSearchService(WebClient webClient) {
+    public GoogleSearchService(WebClient webClient, ObjectMapper objectMapper) {
         this.webClient = webClient;
+        this.objectMapper = objectMapper;
     }
 
     public List<SearchResult> search(String query) {
         try {
-            // Use the configured searchUrl property instead of hardcoding
             URI uri = UriComponentsBuilder.fromHttpUrl(searchUrl)
-                    .queryParam("key", apiKey)
-                    .queryParam("cx", searchEngineId)
                     .queryParam("q", query)
-                    .queryParam("num", 4)
+                    .queryParam("format", "json")
+                    .queryParam("no_html", "1")
+                    .queryParam("skip_disambig", "1")
                     .build()
                     .toUri();
 
-            GoogleSearchResponse response = webClient.get()
+            // DuckDuckGo serves this as "application/x-javascript" rather than "application/json",
+            // so fetch as raw text and parse manually instead of relying on content-type-based decoding.
+            String body = webClient.get()
                     .uri(uri)
                     .retrieve()
-                    .bodyToMono(GoogleSearchResponse.class)
+                    .bodyToMono(String.class)
                     .block();
 
-            if (response == null || response.items() == null) {
-                log.warn("Google Search returned no items for query: '{}'", query);
+            if (body == null || body.isBlank()) {
+                log.warn("DuckDuckGo returned no response for query: '{}'", query);
                 return Collections.emptyList();
             }
 
-            return response.items().stream()
-                    .map(item -> new SearchResult(item.title(), item.snippet(), item.link()))
-                    .collect(Collectors.toList());
+            DuckDuckGoResponse response = objectMapper.readValue(body, DuckDuckGoResponse.class);
+
+            List<SearchResult> results = new ArrayList<>();
+
+            if (isPresent(response.abstractText())) {
+                String title = isPresent(response.heading()) ? response.heading() : query;
+                results.add(new SearchResult(title, response.abstractText(), response.abstractUrl()));
+            }
+
+            if (isPresent(response.answer())) {
+                results.add(new SearchResult("Answer", response.answer(), response.abstractUrl()));
+            }
+
+            if (isPresent(response.definition())) {
+                results.add(new SearchResult("Definition", response.definition(), response.definitionUrl()));
+            }
+
+            if (response.relatedTopics() != null) {
+                for (DuckDuckGoRelatedTopic topic : response.relatedTopics()) {
+                    if (results.size() >= MAX_RESULTS) break;
+                    if (isPresent(topic.text())) {
+                        results.add(new SearchResult(topic.text(), topic.text(), topic.firstUrl()));
+                    }
+                }
+            }
+
+            if (results.isEmpty()) {
+                log.warn("DuckDuckGo returned no usable results for query: '{}'", query);
+            }
+
+            return results;
 
         } catch (WebClientResponseException e) {
-            log.error("Google Search HTTP error {}: {}", e.getStatusCode(), e.getResponseBodyAsString());
+            log.error("DuckDuckGo Search HTTP error {}: {}", e.getStatusCode(), e.getResponseBodyAsString());
             return Collections.emptyList();
         } catch (Exception e) {
-            log.error("Google Search failed for query '{}': {}", query, e.getMessage());
+            log.error("DuckDuckGo Search failed for query '{}': {}", query, e.getMessage());
             return Collections.emptyList();
         }
+    }
+
+    private boolean isPresent(String s) {
+        return s != null && !s.isBlank();
     }
 
     public String formatResultsForPrompt(List<SearchResult> results) {
