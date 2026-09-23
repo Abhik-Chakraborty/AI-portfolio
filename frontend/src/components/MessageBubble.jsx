@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 
-export default function MessageBubble({ message, initials }) {
+export default function MessageBubble({ message, initials, isMobile = false }) {
   const isUser = message.role === 'user'
   const isWeb = message.meta?.type === 'web'
   const sources = message.meta?.sources || []
@@ -34,7 +34,7 @@ export default function MessageBubble({ message, initials }) {
         {isUser ? 'You' : (initials || 'YN')}
       </div>
 
-      <div style={{ maxWidth: '75%', display: 'flex', flexDirection: 'column', gap: 8 }}>
+      <div style={{ maxWidth: isMobile ? '82%' : '75%', minWidth: 0, display: 'flex', flexDirection: 'column', gap: 8 }}>
         {/* Bubble */}
         <div style={{
           padding: '12px 16px',
@@ -44,6 +44,7 @@ export default function MessageBubble({ message, initials }) {
           background: isUser ? 'var(--accent)' : 'var(--bg-card)',
           color: isUser ? '#fff' : 'var(--text-primary)',
           border: isUser ? 'none' : '1px solid var(--border)',
+          overflowWrap: 'anywhere',
         }}>
           {isUser ? (
             message.content

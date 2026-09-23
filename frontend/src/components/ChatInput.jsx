@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 
-export default function ChatInput({ onSend, loading }) {
+export default function ChatInput({ onSend, loading, isMobile = false }) {
   const [value, setValue] = useState('')
   const textareaRef = useRef(null)
 
@@ -37,7 +37,7 @@ export default function ChatInput({ onSend, loading }) {
 
   return (
     <div style={{
-      padding: '16px 24px 20px',
+      padding: isMobile ? '12px 14px calc(12px + env(safe-area-inset-bottom))' : '16px 24px 20px',
       borderTop: '1px solid var(--border)',
       background: 'var(--bg-surface)',
     }}>
@@ -66,7 +66,8 @@ export default function ChatInput({ onSend, loading }) {
             background: 'transparent',
             border: 'none',
             outline: 'none',
-            fontSize: 14,
+            // 16px on mobile prevents iOS Safari from auto-zooming when the field focuses.
+            fontSize: isMobile ? 16 : 14,
             color: 'var(--text-primary)',
             padding: '10px 0',
             lineHeight: 1.5,

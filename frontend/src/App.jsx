@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { fetchPersona } from './services/api'
 import { useChat } from './hooks/useChat'
+import { useMediaQuery } from './hooks/useMediaQuery'
 import Sidebar from './components/Sidebar'
 import MessageBubble from './components/MessageBubble'
 import TypingIndicator from './components/TypingIndicator'
@@ -33,8 +34,11 @@ const WELCOME_MESSAGE = {
 export default function App() {
   const [persona, setPersona] = useState(null)
   const [wakingUp, setWakingUp] = useState(false)
+  const [drawerOpen, setDrawerOpen] = useState(false)
   const { messages, loading, send, clearHistory } = useChat()
   const messagesEndRef = useRef(null)
+
+  const isMobile = useMediaQuery('(max-width: 768px)')
 
   useEffect(() => {
     // The backend is on Render's free tier, which spins down after ~15 min idle.
@@ -70,21 +74,76 @@ export default function App() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages, loading])
 
+  // Close the drawer automatically when growing back to desktop width.
+  useEffect(() => {
+    if (!isMobile) setDrawerOpen(false)
+  }, [isMobile])
+
   const allMessages = messages.length === 0
     ? [WELCOME_MESSAGE]
     : messages
 
-  return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
-      <Sidebar
-        persona={persona}
-        onQuestion={send}
-        onClear={clearHistory}
-      />
+  // On mobile, tapping a suggested question or "clear" should also dismiss the drawer.
+  const handleQuestion = (q) => {
+    send(q)
+    if (isMobile) setDrawerOpen(false)
+  }
+  const handleClear = () => {
+    clearHistory()
+    if (isMobile) setDrawerOpen(false)
+  }
 
-      {/* Main chat area */}
+  return (
+    <div style={{ display: 'flex', height: '100dvh', overflow: 'hidden' }}>
+      {/* ─── Sidebar: fixed column on desktop, slide-in drawer on mobile ─── */}
+      {!isMobile ? (
+        <Sidebar persona={persona} onQuestion={send} onClear={clearHistory} />
+      ) : (
+        <>
+          {/* Backdrop */}
+          <div
+            onClick={() => setDrawerOpen(false)}
+            aria-hidden={!drawerOpen}
+            style={{
+              position: 'fixed',
+              inset: 0,
+              background: 'rgba(0, 0, 0, 0.55)',
+              backdropFilter: 'blur(2px)',
+              zIndex: 40,
+              opacity: drawerOpen ? 1 : 0,
+              pointerEvents: drawerOpen ? 'auto' : 'none',
+              transition: 'opacity 0.28s ease',
+            }}
+          />
+          {/* Drawer */}
+          <div
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              bottom: 0,
+              width: 'min(84vw, 320px)',
+              zIndex: 50,
+              transform: drawerOpen ? 'translateX(0)' : 'translateX(-100%)',
+              transition: 'transform 0.28s ease',
+              boxShadow: drawerOpen ? '0 0 40px rgba(0, 0, 0, 0.5)' : 'none',
+            }}
+          >
+            <Sidebar
+              mobile
+              persona={persona}
+              onQuestion={handleQuestion}
+              onClear={handleClear}
+              onClose={() => setDrawerOpen(false)}
+            />
+          </div>
+        </>
+      )}
+
+      {/* ─── Main chat area ─── */}
       <main style={{
         flex: 1,
+        minWidth: 0,
         display: 'flex',
         flexDirection: 'column',
         overflow: 'hidden',
@@ -92,38 +151,69 @@ export default function App() {
       }}>
         {/* Top bar */}
         <header style={{
-          padding: '16px 28px',
+          padding: isMobile ? '12px 16px' : '16px 28px',
           borderBottom: '1px solid var(--border)',
           background: 'var(--bg-surface)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
+          gap: 12,
         }}>
-          <div>
-            <h2 style={{
-              fontFamily: 'var(--font-display)',
-              fontSize: 16,
-              fontWeight: 600,
-              color: 'var(--text-primary)',
-            }}>
-              AI Portfolio Chat
-            </h2>
-            <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 2 }}>
-              Ask anything — personal questions answered from my data, general questions searched from the web
-            </p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, minWidth: 0 }}>
+            {isMobile && (
+              <button
+                onClick={() => setDrawerOpen(true)}
+                aria-label="Open menu"
+                style={{
+                  width: 38,
+                  height: 38,
+                  flexShrink: 0,
+                  borderRadius: 'var(--radius-sm)',
+                  border: '1px solid var(--border)',
+                  background: 'var(--bg-card)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-primary)" strokeWidth="2" strokeLinecap="round">
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              </button>
+            )}
+            <div style={{ minWidth: 0 }}>
+              <h2 style={{
+                fontFamily: 'var(--font-display)',
+                fontSize: 16,
+                fontWeight: 600,
+                color: 'var(--text-primary)',
+                whiteSpace: 'nowrap',
+              }}>
+                AI Portfolio Chat
+              </h2>
+              {!isMobile && (
+                <p style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 2 }}>
+                  Ask anything — personal questions answered from my data, general questions searched from the web
+                </p>
+              )}
+            </div>
           </div>
 
-          {/* Legend */}
-          <div style={{ display: 'flex', gap: 14, alignItems: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--accent)', display: 'block' }} />
-              <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>Personal</span>
+          {/* Legend — hidden on mobile to save room */}
+          {!isMobile && (
+            <div style={{ display: 'flex', gap: 14, alignItems: 'center', flexShrink: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--accent)', display: 'block' }} />
+                <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>Personal</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--web-accent)', display: 'block' }} />
+                <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>Web search</span>
+              </div>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--web-accent)', display: 'block' }} />
-              <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>Web search</span>
-            </div>
-          </div>
+          )}
         </header>
 
         {/* Cold-start notice — only shown while the first request is slow */}
@@ -132,7 +222,7 @@ export default function App() {
             role="status"
             aria-live="polite"
             style={{
-              padding: '10px 28px',
+              padding: isMobile ? '10px 16px' : '10px 28px',
               borderBottom: '1px solid var(--border)',
               background: 'var(--accent-soft)',
               display: 'flex',
@@ -165,16 +255,17 @@ export default function App() {
         <div style={{
           flex: 1,
           overflowY: 'auto',
-          padding: '28px 32px',
+          padding: isMobile ? '16px 14px' : '28px 32px',
           display: 'flex',
           flexDirection: 'column',
-          gap: 20,
+          gap: isMobile ? 16 : 20,
         }}>
           {allMessages.map(msg => (
             <MessageBubble
               key={msg.id}
               message={msg}
               initials={persona?.initials}
+              isMobile={isMobile}
             />
           ))}
 
@@ -184,7 +275,7 @@ export default function App() {
         </div>
 
         {/* Input */}
-        <ChatInput onSend={send} loading={loading} />
+        <ChatInput onSend={send} loading={loading} isMobile={isMobile} />
       </main>
     </div>
   )

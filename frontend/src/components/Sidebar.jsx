@@ -11,12 +11,13 @@ const SUGGESTED_QUESTIONS = [
   "What's the difference between SQL and NoSQL?",
 ]
 
-export default function Sidebar({ persona, onQuestion, onClear }) {
+export default function Sidebar({ persona, onQuestion, onClear, mobile = false, onClose }) {
   const [expanded, setExpanded] = useState(true)
 
   return (
     <aside style={{
-      width: 280,
+      width: mobile ? '100%' : 280,
+      height: mobile ? '100%' : undefined,
       flexShrink: 0,
       background: 'var(--bg-surface)',
       borderRight: '1px solid var(--border)',
@@ -26,6 +27,32 @@ export default function Sidebar({ persona, onQuestion, onClear }) {
       gap: 28,
       overflowY: 'auto',
     }}>
+      {/* Close button — only in the mobile drawer */}
+      {mobile && (
+        <button
+          onClick={onClose}
+          aria-label="Close menu"
+          style={{
+            position: 'absolute',
+            top: 14,
+            right: 14,
+            width: 34,
+            height: 34,
+            borderRadius: 'var(--radius-sm)',
+            border: '1px solid var(--border)',
+            background: 'var(--bg-card)',
+            color: 'var(--text-secondary)',
+            fontSize: 18,
+            lineHeight: 1,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          ✕
+        </button>
+      )}
+
       {/* Avatar + name */}
       <div style={{ textAlign: 'center' }}>
         <div style={{
