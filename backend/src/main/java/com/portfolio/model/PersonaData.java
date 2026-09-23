@@ -40,14 +40,30 @@ public class PersonaData {
 
     // ─── PROJECTS ──────────────────────────────────────────────
     public static final List<String> PROJECTS = List.of(
-            "Project One — A [what it does] built with [tech stack]. " +
-            "[Any impact: X users, solved X problem]. GitHub: [link]",
+            "AI Portfolio — This very portfolio: instead of the usual About/Projects/Contact pages, it's an " +
+            "AI chat that answers questions about me in the first person. Built with a Spring Boot (Java 17) " +
+            "backend and a React + Vite frontend, served single-origin. It uses a lightweight RAG pipeline — " +
+            "Lucene BM25 indexes my resume, projects, and skills, and an intent classifier routes personal " +
+            "questions to that context. For anything beyond my own knowledge (tech concepts, coding, trivia), " +
+            "it falls back to live web search and cites its sources. LLM calls go through a Gemini endpoint. " +
+            "GitHub: https://github.com/Abhik-Chakraborty/AI-portfolio",
 
-            "Project Two — A [what it does] built with [tech stack]. " +
-            "[Any impact]. GitHub: [link]",
+            "Inventory Management System — A Spring Boot 3.3 (Java 17) REST backend for managing product " +
+            "catalogs, stock levels, and sales. Products and inventory are modelled as separate 1:1 tables, " +
+            "with Sale/SaleItem for transactions and an append-only StockMovement log that powers both the " +
+            "audit trail and reporting (stock, low-stock, and date-range sales reports). Built with Spring " +
+            "Data JPA, Spring Validation, and PostgreSQL, with a documented REST API (Swagger/OpenAPI) and " +
+            "JUnit 5 + Mockito unit tests. GitHub: https://github.com/Abhik-Chakraborty/Inventory-Management-System",
 
-            "Project Three — A [what it does] built with [tech stack]. " +
-            "[Any impact]. GitHub: [link]"
+            "Liquidity Volume Analytics Engine — A Spring Boot (Java 21) REST service that computes " +
+            "trading-volume metrics and liquidity classifications for financial instruments. It resolves " +
+            "instruments across multiple vendor symbologies (RIC, Bloomberg-style, ISIN, plain ticker) via a " +
+            "scored fan-out over simulated vendor feeds, stores historical daily volume observations, and " +
+            "exposes rolling-window analytics (median, mean, VWAP-weighted) over a JSON API. It classifies " +
+            "instruments as HIGH/MEDIUM/LOW liquidity using average daily volume and an Amihud illiquidity " +
+            "proxy, supports portfolio roll-ups and concurrent batch ingestion, and uses a Caffeine cache " +
+            "plus a strategy pattern for interchangeable volume algorithms. Stack: H2, Caffeine, Swagger/" +
+            "OpenAPI, JUnit 5 + Mockito. GitHub: https://github.com/Abhik-Chakraborty/liquidity-volume-analytics-engine"
             // Add more projects here
     );
 
