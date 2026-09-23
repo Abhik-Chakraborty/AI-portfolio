@@ -11,7 +11,9 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.reactive.function.client.WebClientResponseException;
+import reactor.util.retry.Retry;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -139,7 +141,28 @@ public class ClaudeService {
                 .bodyValue(request)
                 .retrieve()
                 .bodyToMono(AnthropicResponse.class)
+                // Gemini's free tier occasionally returns a transient 503 ("high demand")
+                // that clears on a quick retry. Retry up to twice with exponential backoff
+                // (1s → 4s, jittered). On exhaustion, rethrow the original error so the
+                // caller's catch block logs the real status and returns the user fallback.
+                .retryWhen(Retry.backoff(2, Duration.ofSeconds(1))
+                        .maxBackoff(Duration.ofSeconds(4))
+                        .filter(ClaudeService::isRetryableStatus)
+                        .onRetryExhaustedThrow((spec, signal) -> signal.failure()))
                 .block();
+    }
+
+    /**
+     * Only retry fast, transient HTTP failures (rate limit / overload / gateway errors).
+     * We deliberately do NOT retry read timeouts — those are already slow, so retrying
+     * would compound the delay for the user.
+     */
+    private static boolean isRetryableStatus(Throwable t) {
+        if (t instanceof WebClientResponseException wcre) {
+            int code = wcre.getStatusCode().value();
+            return code == 429 || code == 502 || code == 503 || code == 504;
+        }
+        return false;
     }
 
     private List<AnthropicMessage> buildMessageHistory(String systemPrompt,

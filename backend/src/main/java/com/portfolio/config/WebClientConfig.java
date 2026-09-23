@@ -14,7 +14,7 @@ public class WebClientConfig {
     @Bean
     public WebClient webClient() {
         HttpClient httpClient = HttpClient.create()
-                .responseTimeout(Duration.ofSeconds(30));  // 30s timeout — prevents hung threads
+                .responseTimeout(Duration.ofSeconds(60));  // 60s — free-tier Gemini can be slow under load
 
         return WebClient.builder()
                 .clientConnector(new ReactorClientHttpConnector(httpClient))
