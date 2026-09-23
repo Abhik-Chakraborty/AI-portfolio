@@ -32,10 +32,17 @@ const WELCOME_MESSAGE = {
 
 export default function App() {
   const [persona, setPersona] = useState(null)
+  const [wakingUp, setWakingUp] = useState(false)
   const { messages, loading, send, clearHistory } = useChat()
   const messagesEndRef = useRef(null)
 
   useEffect(() => {
+    // The backend is on Render's free tier, which spins down after ~15 min idle.
+    // The first request then cold-starts and can take up to a minute. fetchPersona()
+    // is the very first call the app makes, so we use it to detect that: if it hasn't
+    // resolved within 3s, show a heads-up banner so visitors don't assume it's broken.
+    const slowTimer = setTimeout(() => setWakingUp(true), 3000)
+
     fetchPersona()
       .then(data => setPersona(normalizePersona(data)))
       .catch(() =>
@@ -51,6 +58,12 @@ export default function App() {
           }),
         ),
       )
+      .finally(() => {
+        clearTimeout(slowTimer)
+        setWakingUp(false)
+      })
+
+    return () => clearTimeout(slowTimer)
   }, [])
 
   useEffect(() => {
@@ -112,6 +125,41 @@ export default function App() {
             </div>
           </div>
         </header>
+
+        {/* Cold-start notice — only shown while the first request is slow */}
+        {wakingUp && (
+          <div
+            role="status"
+            aria-live="polite"
+            style={{
+              padding: '10px 28px',
+              borderBottom: '1px solid var(--border)',
+              background: 'var(--accent-soft)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 10,
+              fontSize: 13,
+              color: 'var(--text-secondary)',
+              animation: 'fadeUp 0.3s ease',
+            }}
+          >
+            <span
+              style={{
+                width: 8,
+                height: 8,
+                borderRadius: '50%',
+                background: 'var(--accent)',
+                display: 'block',
+                flexShrink: 0,
+                animation: 'pulse 1.2s ease-in-out infinite',
+              }}
+            />
+            <span>
+              Waking up the server — this is hosted on Render's free tier and can take up
+              to a minute on the first visit. Thanks for your patience!
+            </span>
+          </div>
+        )}
 
         {/* Messages */}
         <div style={{

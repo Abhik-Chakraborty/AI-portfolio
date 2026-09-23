@@ -6,3 +6,10 @@ backend/.gradle/
 backend/build/
 
 PROJECT_OVERVIEW.md
+
+# Logs — any logs/ directory at any depth (e.g. backend/logs/) and all .log files
+logs/
+*.log
+
+# Node dependencies — any node_modules/ at any depth (e.g. frontend/node_modules/)
+node_modules/
