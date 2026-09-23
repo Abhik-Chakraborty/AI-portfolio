@@ -1,32 +1,10 @@
-2026-08-22 12:49:38.598 [http-nio-8081-exec-7] INFO  c.p.controller.ChatController - Received chat request: while on a video or voice call on whatsapp why does other application sound goes down ? and how do we fix it ?
-2026-08-22 12:49:38.619 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - Handling chat message: while on a video or voice call on whatsapp why does other application sound goes down ? and how do we fix it ?
-2026-08-22 12:49:39.719 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
-2026-08-22 12:49:39.719 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - Intent classified as: web
-2026-08-22 12:49:39.961 [http-nio-8081-exec-7] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'while on a video or voice call on whatsapp why does other application sound goes down ? and how do we fix it ?'
-2026-08-22 12:49:39.961 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
-2026-08-22 12:50:03.679 [http-nio-8081-exec-8] INFO  c.p.controller.ChatController - Received chat request: its related to mac ?
-2026-08-22 12:50:03.679 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - Handling chat message: its related to mac ?
-2026-08-22 12:50:04.688 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
-2026-08-22 12:50:04.688 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - Intent classified as: web
-2026-08-22 12:50:04.945 [http-nio-8081-exec-8] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'its related to mac ?'
-2026-08-22 12:50:04.946 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
-2026-08-22 22:13:50.265 [http-nio-8081-exec-7] INFO  c.p.controller.ChatController - Received chat request: Tell me about your experience
-2026-08-22 22:13:50.277 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - Handling chat message: Tell me about your experience
-2026-08-22 22:13:51.345 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
-2026-08-22 22:13:51.346 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
-2026-08-22 22:13:51.372 [http-nio-8081-exec-7] DEBUG com.portfolio.service.ChatService - Retrieved 3 persona chunks for query
-2026-08-22 22:14:07.723 [http-nio-8081-exec-8] INFO  c.p.controller.ChatController - Received chat request: where you are from ?
-2026-08-22 22:14:07.724 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - Handling chat message: where you are from ?
-2026-08-22 22:14:08.525 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
-2026-08-22 22:14:08.525 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
-2026-08-22 22:14:08.531 [http-nio-8081-exec-8] DEBUG com.portfolio.service.ChatService - Retrieved 4 persona chunks for query
-2026-08-22 22:14:15.574 [http-nio-8081-exec-9] INFO  c.p.controller.ChatController - Received chat request: What's your tech stack?
-2026-08-22 22:14:15.575 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - Handling chat message: What's your tech stack?
-2026-08-22 22:14:16.426 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
-2026-08-22 22:14:16.426 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
-2026-08-22 22:14:16.445 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
-2026-08-22 22:14:34.040 [http-nio-8081-exec-10] INFO  c.p.controller.ChatController - Received chat request: Are you open to work?
-2026-08-22 22:14:34.041 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - Handling chat message: Are you open to work?
-2026-08-22 22:14:34.875 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'personal'
-2026-08-22 22:14:34.875 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - Intent classified as: personal
-2026-08-22 22:14:34.887 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - Retrieved 5 persona chunks for query
+2026-09-02 19:53:36.284 [main] INFO  com.portfolio.PortfolioApplication - Starting PortfolioApplication using Java 21.0.11 with PID 5481 (/Users/abhikchakraborty/Desktop/ai-portfolio/backend/build/classes/java/main started by abhikchakraborty in /Users/abhikchakraborty/Desktop/ai-portfolio/backend)
+2026-09-02 19:53:36.286 [main] DEBUG com.portfolio.PortfolioApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-09-02 19:53:36.287 [main] INFO  com.portfolio.PortfolioApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-02 19:53:36.851 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-09-02 19:53:36.908 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 593 ms
+2026-09-02 19:53:37.125 [main] INFO  com.portfolio.service.ClaudeService - ClaudeService initialised — model: gemini-flash-lite-latest, url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+2026-09-02 19:53:37.190 [main] WARN  o.a.l.i.v.VectorizationProvider - Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-09-02 19:53:37.303 [main] INFO  c.p.service.PersonaRetrievalService - PersonaRetrievalService indexed 14 chunks
+2026-09-02 19:53:37.508 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-09-02 19:53:37.512 [main] INFO  com.portfolio.PortfolioApplication - Started PortfolioApplication in 1.591 seconds (process running for 1.907)

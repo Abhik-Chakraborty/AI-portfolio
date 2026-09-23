@@ -1,0 +1,30 @@
+2026-08-23 14:15:16.427 [http-nio-8081-exec-9] INFO  c.p.controller.ChatController - Received chat request: where does the picture clicked on booth gets save ?
+2026-08-23 14:15:16.471 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - Handling chat message: where does the picture clicked on booth gets save ?
+2026-08-23 14:15:17.504 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-23 14:15:17.505 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-23 14:15:17.924 [http-nio-8081-exec-9] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'where does the picture clicked on booth gets save ?'
+2026-08-23 14:15:17.925 [http-nio-8081-exec-9] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-08-23 14:15:36.258 [http-nio-8081-exec-10] INFO  c.p.controller.ChatController - Received chat request: the booth is application in mac
+2026-08-23 14:15:36.259 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - Handling chat message: the booth is application in mac
+2026-08-23 14:15:37.169 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-23 14:15:37.170 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-23 14:15:37.329 [http-nio-8081-exec-10] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'the booth is application in mac'
+2026-08-23 14:15:37.329 [http-nio-8081-exec-10] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-08-23 14:21:24.819 [http-nio-8081-exec-2] INFO  c.p.controller.ChatController - Received chat request: in mac after taking photo from photo booth how to get those photo where they get stored ?
+2026-08-23 14:21:24.821 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Handling chat message: in mac after taking photo from photo booth how to get those photo where they get stored ?
+2026-08-23 14:21:25.971 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-23 14:21:25.971 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-23 14:21:26.258 [http-nio-8081-exec-2] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'in mac after taking photo from photo booth how to get those photo where they get stored ?'
+2026-08-23 14:21:26.258 [http-nio-8081-exec-2] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-08-23 14:24:39.736 [http-nio-8081-exec-1] INFO  c.p.controller.ChatController - Received chat request: don't have picture section on sidebar
+2026-08-23 14:24:39.745 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Handling chat message: don't have picture section on sidebar
+2026-08-23 14:24:40.534 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-23 14:24:40.534 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-23 14:24:40.949 [http-nio-8081-exec-1] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'don't have picture section on sidebar'
+2026-08-23 14:24:40.949 [http-nio-8081-exec-1] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge
+2026-08-23 14:26:21.715 [http-nio-8081-exec-4] INFO  c.p.controller.ChatController - Received chat request: and how to see the pictures that were clicked ? I want to edit them
+2026-08-23 14:26:21.718 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Handling chat message: and how to see the pictures that were clicked ? I want to edit them
+2026-08-23 14:26:22.572 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ClaudeService - Intent classified as: 'web'
+2026-08-23 14:26:22.573 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - Intent classified as: web
+2026-08-23 14:26:23.091 [http-nio-8081-exec-4] WARN  c.p.service.GoogleSearchService - DuckDuckGo returned no usable results for query: 'and how to see the pictures that were clicked ? I want to edit them'
+2026-08-23 14:26:23.091 [http-nio-8081-exec-4] DEBUG com.portfolio.service.ChatService - No web results found, falling back to persona knowledge

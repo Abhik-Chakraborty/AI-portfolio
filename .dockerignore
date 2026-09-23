@@ -1,0 +1,23 @@
+# Keep the Docker build context small and reproducible.
+.git
+.idea
+.vscode
+.claude
+
+# Node
+**/node_modules
+frontend/dist
+
+# Gradle / Java build output
+backend/.gradle
+backend/build
+backend/bin
+backend/.idea
+
+# Local secrets and logs (never bake these into the image)
+backend/config/local.properties
+backend/logs
+**/*.log
+
+# Docs / meta
+*.md
